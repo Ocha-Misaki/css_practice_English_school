@@ -17,23 +17,13 @@ $(function () {
     }
   })
 
-  $(".inview-slide-right").on("inview", function (
-    event,
-    isInView,
-    visiblePartX,
-    visiblePartY
-  ) {
+  $(".inview-slide-right").on("inview", function (isInView) {
     if (isInView) {
       $(this).stop().addClass("slide-right")
     }
   })
 
-  $(".inview-balloon").on("inview", function (
-    event,
-    isInView,
-    visiblePartX,
-    visiblePartY
-  ) {
+  $(".inview-balloon").on("inview", function (isInView) {
     if (isInView) {
       $(this).stop().addClass("balloon")
     }
