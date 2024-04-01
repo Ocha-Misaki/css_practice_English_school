@@ -401,3 +401,57 @@ li a{
 .footer{
   background-color: #E8E8E8;
 }
+
+/*レスポンシブルデザイン */
+@media screen and (max-width: 900px){
+  body{
+    margin: 0;
+  }
+  .header-logo{
+    width: 120px;
+  }
+  .header-list.active ul{
+    margin: 150px auto 0 auto ;
+  }
+  .main-visual{
+    height: 490px;
+  }
+  .main-visual .fade-list img{
+    width: 100%;
+    height: 300px;
+  }
+  .main-visual-title{
+    font-size: 2rem;
+    margin: 50px auto 25px ;
+  }
+  .reason{
+    padding: 40px 0;
+  }
+  .reason .slide{
+    width: calc(100% - 16px);
+  }
+  @keyframes slide-left {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(16px);
+    }
+  }
+  .voice .student{
+    text-align: center;
+  }
+  .item-left .item-right{
+    margin-bottom: 40px;
+  }
+}
